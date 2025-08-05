@@ -5,42 +5,33 @@ body {
     color: #333;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-bottom: 10px;
 }
 
+/* Logo */
 .logo-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
 }
 
 .logo {
     width: 100%;
-    max-width: 1200px;  /* Grande en pantallas grandes */
+    max-width: 1200px;   /* en pantallas grandes */
     height: auto;
-    object-fit: contain; /* Mantiene toda la imagen visible */
+    display: block;
+    margin: 30px auto 0; /* espacio superior */
 }
 
-
-
-/* Evita que en móviles se reduzca el logo */
-@media (max-width: 768px) {
-    .logo {
-        width: 1200px;   /* Sigue usando el tamaño grande */
-        max-width: 1200px;
-    }
-}
-
-
-/* Nav */
+/* ===== Nav ===== */
 .nav {
     width: 100%;
     background-color: #000;
@@ -53,6 +44,7 @@ header {
     margin: 0;
     padding: 10px 0;
     gap: 50px;
+    flex-wrap: wrap; /* Por si el espacio es muy chico */
 }
 
 #menu a {
@@ -60,13 +52,14 @@ header {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
-#menu a:hover{
+#menu a:hover {
     color: #d4af37; /* dorado elegante */
 }
 
-/* Main */
+/* ===== Main ===== */
 main {
     display: flex;
     justify-content: center;
@@ -75,4 +68,16 @@ main {
     min-height: calc(100vh - 200px);
 }
 
-
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 90%; /* un poco más chico en tablets/móviles */
+        margin: 20px auto 0;
+    }
+    #menu {
+        gap: 20px; /* reducir espacio en móviles */
+    }
+    #menu a {
+        font-size: 0.9rem;
+    }
+}
