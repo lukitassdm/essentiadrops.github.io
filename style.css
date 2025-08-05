@@ -14,13 +14,21 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
 .logo {
     width: 100%;
-    max-width: 1200px;  /* Grande en PC */
-    height: auto;       /* Mantiene proporción */
-    display: block;
-    margin: 30px auto;
+    max-width: 1200px;  /* Grande en pantallas grandes */
+    height: auto;
+    object-fit: contain; /* Mantiene toda la imagen visible */
 }
+
 
 
 /* Evita que en móviles se reduzca el logo */
@@ -66,4 +74,5 @@ main {
     padding: 40px 20px;
     min-height: calc(100vh - 200px);
 }
+
 
