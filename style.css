@@ -14,15 +14,21 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.logo{
-    width: 1200px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 20px;
+.logo {
+    width: 1200px;     /* Mantiene el tamaño original */
+    height: auto;      /* Mantiene proporción */
+    display: block;    /* Asegura alineación correcta */
+    margin: 30px auto; /* Centrado horizontal */
 }
+
+/* Evita que en móviles se reduzca el logo */
+@media (max-width: 768px) {
+    .logo {
+        width: 1200px;   /* Sigue usando el tamaño grande */
+        max-width: 1200px;
+    }
+}
+
 
 /* Nav */
 .nav {
