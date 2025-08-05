@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.logo {
+    width: 400px;
+}
+
+/* Nav */
+.nav {
+    width: 100%;
+    background-color: #000;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    gap: 50px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#menu a:hover,
+#menu a.active {
+    color: #d4af37;
+}
+
+/* Producto principal */
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.precioycomprar {
+    text-align: center;
+}
+
+.boton img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Descripción */
+.description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.notes img {
+    width: 80%;
+}
+
+/* Envío y Decant */
+.envioydecant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.envio img, .decant img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 200px;
+}
+
+.redes img {
+    width: 35px;
+    margin: 0 10px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
