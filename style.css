@@ -15,11 +15,13 @@ header {
 }
 
 .logo {
-    width: 1200px;     /* Mantiene el tamaño original */
-    height: auto;      /* Mantiene proporción */
-    display: block;    /* Asegura alineación correcta */
-    margin: 30px auto; /* Centrado horizontal */
+    width: 100%;
+    max-width: 1200px;  /* Grande en PC */
+    height: auto;       /* Mantiene proporción */
+    display: block;
+    margin: 30px auto;
 }
+
 
 /* Evita que en móviles se reduzca el logo */
 @media (max-width: 768px) {
@@ -64,3 +66,4 @@ main {
     padding: 40px 20px;
     min-height: calc(100vh - 200px);
 }
+
